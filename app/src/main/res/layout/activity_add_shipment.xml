@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_shipment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@mipmap/background"
+    tools:context="com.example.omara.trackit.add_shipment">
+
+    <TextView
+        android:text="Available Trucks:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView9" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView9"
+        android:textColor="#ffffff"
+        android:spinnerMode="dropdown"
+        android:layout_alignParentStart="true"
+        android:id="@+id/spinner2" />
+
+    <TextView
+        android:text="Available Drivers:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner2"
+        android:layout_alignParentStart="true"
+        android:id="@+id/avDrivers" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/avDrivers"
+        android:layout_alignParentStart="true"
+        android:spinnerMode="dropdown"
+        android:textColor="#ffffff"
+        android:id="@+id/driver_spinner" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:layout_below="@+id/driver_spinner"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView22" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageButton5" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/search"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/imageButton5"
+        android:id="@+id/imageButton6" />
+
+</RelativeLayout>
